@@ -1,0 +1,130 @@
+
+/* Reset */
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+
+/* General */
+
+body {
+    color: white;
+}
+
+#wrapper {
+    width: 100%;
+    height: 100vh;
+    background: black;
+}
+
+main {
+    height: calc(100% - 90px);
+}
+
+main #content {
+    background-color: #141922;
+}
+
+footer {
+    height: 90px;
+    background: #282828;
+}
+
+
+/* Layout sections */
+
+.call-to-action {
+    background-color: rgba(0, 0, 0, 0.4);
+}
+
+.left-navigation {
+    flex-basis: 230px;
+}
+
+.player-left, .player-right {
+    width: 230px;
+}
+
+.player-center {
+    width: 40%;
+}
+
+
+/* Structure */
+
+.container {
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.container-fluid {
+    width: 100%;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.col-3 {
+    flex-basis: calc(100% / 12 * 3);
+}
+
+.col-4 {
+    flex-basis: calc(100% / 12 * 4);
+}
+
+.col-6 {
+    flex-basis: calc(100% / 12 * 6);
+}
+
+.col-12 {
+    flex-basis: 100%;
+}
+
+
+/* Utilities */
+
+.mt-3 {
+    margin-top: 3rem;
+}
+
+.px-2 {
+    padding: 0 2rem;
+}
+
+
+/* Flex Utilities */
+
+.d-flex {
+    display: flex;
+}
+
+.justify-content-center {
+    justify-content: center;
+}
+.justify-space-between {
+    justify-content: space-between;
+}
+
+.flex-grow {
+    flex-grow: 1;
+}
+
+.flex-direction-column {
+    flex-direction: column;
+}
+
+
+/* Debug utilities */
+
+.debug [class^="col"],
+.debug .top-navigation, .debug .bottom-navigation,
+.debug .call-to-action,
+.debug .player-left, .debug .player-center, .debug .player-right {
+    border: 1px solid #F8E3D0;
+    height: 90px;
+}
